@@ -36,7 +36,7 @@
     "opencollective": "^1.0.3",
     "query-string": "^4.2.3",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react-dom": "^16.0.1",
     "whatwg-fetch": "^1.0.0"
   },
   "collective": {
