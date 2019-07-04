@@ -8,7 +8,9 @@
     "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p",
     "lint": "standard --verbose | snazzy",
     "watch": "./node_modules/webpack/bin/webpack.js --watch",
-    "postinstall": "opencollective postinstall"
+    "postinstall": "opencollective postinstall",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "config": {
     "ghooks": {
@@ -37,11 +39,13 @@
     "query-string": "^4.2.3",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "snyk": "^1.189.0"
   },
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/speedtracker",
     "logo": "https://opencollective.com/opencollective/logo.txt"
-  }
+  },
+  "snyk": true
 }
